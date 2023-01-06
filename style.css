@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    position: 100%;
+}
+.card:hover img {
+    transform: scale(1.2);
+    transition: all .3s ease-in;
+}
+
+.card:hover .img-title {
+    transform: matrix();
+    opacity: 100%;
+    transition: all .2s ease-out;
+    position: absolute;
+}
+
+.img-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, .7);
+    /*background-image: linear-gradient(to top, rgba(5,5,5,0), rgba(5,5,5,1));*/
+    opacity: 0%;
+    transition: all .2s ease-in;
+    text-align: center;
+}
